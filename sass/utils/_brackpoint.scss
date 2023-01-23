@@ -1,0 +1,22 @@
+@mixin for-phone {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+@mixin for-tablet {
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+@mixin for-desktop {
+    @media screen and (min-width: 1200px){
+        @content;
+    }
+}
+@mixin for-retina {
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            @content;
+        }
+     }

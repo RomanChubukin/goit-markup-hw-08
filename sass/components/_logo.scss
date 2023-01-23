@@ -1,0 +1,29 @@
+.logo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;    
+    color: #000000;
+    padding: 16px 0;
+@include for-tablet {
+    margin-right: 88px;
+}    
+@include for-desktop {
+    font-size: 26px;
+    line-height: 1.2;
+    margin-right: 93px;
+}
+
+}
+
+.logo-web {
+    color: var(--color-blue);}
+
+.logo--footer {
+    color: var(--color-white);
+    margin: auto;
+@include for-desktop {
+    margin-left: 0px;
+}}

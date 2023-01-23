@@ -1,0 +1,50 @@
+.section-benefits {
+    padding: 60px 0 0 0;
+@include for-desktop {
+    padding: 94px 0 0 0;
+} 
+}
+.benefits {
+    margin: 30px 15px;
+ @include for-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;}
+
+
+    &>li {
+        @include for-tablet {
+        flex-basis: calc((100% - 30px) / 2);}
+
+        @include for-desktop{
+        flex-basis: calc((100% - 90px) / 4);
+        }}
+            
+    &__title {
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-head);
+    margin-bottom: 10px;
+}
+
+    &__text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+    &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: var(--color-easy-gray);
+    border-radius: 4px;
+    margin: 30px 0;
+@include for-tablet {
+    margin: 0 0 30px 0;
+}
+}
+}
