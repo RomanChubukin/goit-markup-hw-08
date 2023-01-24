@@ -27,6 +27,11 @@
     text-transform: uppercase;
     color: var(--color-head);
     margin-bottom: 10px;
+    text-align: center;
+
+    @include for-tablet {
+        text-align: left;
+    }
 }
 
     &__text {

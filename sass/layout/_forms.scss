@@ -9,6 +9,9 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--color-white);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
 @include for-desktop {
     text-align: left;
 }
@@ -129,8 +132,8 @@
     
 }
 
-.form-order__-input:focus + .form-order__icon {
-    color: var(--color-blue);
+.form-order__input:focus + .form-order__icon {
+    fill: var(--color-blue);
 }
 
 .form-order__textarea {
@@ -176,6 +179,7 @@
     display: flex;
     align-items: center;
     margin: 0;
+    padding-left: 12px;
 }
 
 .checkbox-original {

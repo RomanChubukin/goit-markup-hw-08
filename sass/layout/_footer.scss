@@ -9,12 +9,19 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
-    gap: 70px;
+    gap: 60px;
+
+@include for-tablet {
+    gap: 0;}
 }
 .footer-nav-logo {
     text-align: center;
+@include for-tablet {
+    margin: 0 165px 60px 0;
+}
 @include for-desktop {
     text-align: left;
+    margin: 0 70px 0 0;
 }
 }
 
@@ -44,12 +51,16 @@
     margin: 9px 0;
 }
 
+
 .footer-social__list {
     display: flex;
     gap: 10px;
     margin: auto;
     justify-content: center;
     align-items: center;
+@include for-desktop {
+    margin-right: 93px;
+}
 }
 
 .footer-social__item {
